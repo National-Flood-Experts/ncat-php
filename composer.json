@@ -1,0 +1,40 @@
+{
+    "name": "nationalfloodexperts/ncat",
+    "description": "A simple implementation of NOAA's NCAT API.",
+    "keywords": [
+      "NOAA",
+      "NCAT",
+      "NGS",
+      "VERTCON",
+      "Geodetic"
+    ],
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Robert Stefanic",
+        "email": "rstefanic72@gmail.com",
+        "role": "Developer"
+      }
+    ],
+    "autoload": {
+        "psr-4": {
+            "NationalFloodExperts\\NCAT\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NationalFloodExperts\\NCAT\\Test\\": "tests"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "guzzlehttp/guzzle": "^7.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
